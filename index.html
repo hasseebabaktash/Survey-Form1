@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <title>Survey Form</title>
+    <link rel='stylesheet' href='styles.css'/>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id='title'>Survey Form</h1>
+    <p id='description'>Tell us about your pets and help us support our furry, feathered, and scaly friends!</p>
+    <form id="survey-form" action="send_email.php" method="post">
+      <div class="container">
+        <fieldset>
+          <label id="name-label" for="name">Name<input id="name" type="text" name="name" required placeholder="Enter your full name"/>
+          </label>
+       <label id="email-label" for="email">Email<input id="email" type="email" name="email" required placeholder="Enter your email"/>
+          </label> 
+        <label id="number-label" for="number">Age <small>(Optional)</small><input id="number" type="number" name="number" min='15' max="120" placeholder="Age" requied/>
+        </label>
+        </fieldset>
+        <fieldset>
+          <label>Do you currently own a pet?</label>
+          <label><input type="radio" name="own-a-pet" value="yes">Yes</label> 
+          <label><input type="radio" name="own-a-pet" value="no">No</label>
+          <label>What type of pets do you own <small>(Check all that apply)</small></label>
+          <label><input type="checkbox" name="type-of-pets" value="dog">Dog</label>
+          <label><input type="checkbox" name="type-of-pets" value="cat">Cat</label>
+          <label><input type="checkbox" name="type-of-pets" value="bird">Bird</label>
+          <label><input type="checkbox" name="type-of-pets" value="fish">Fish</label>
+          <label><input type="checkbox" name="type-of-pets" value="reptile">Reptile</label>
+          <label><input type="checkbox" name="type-of-pets" value="others">Others</label>
+          <label for="dropdown">What qualities do you look for in a pet?</label>
+          <select id="dropdown" name="qualities">
+            <option value="friendly">Friendly</option>
+            <option value="low-maintenance">Low Maintenance</option>
+            <option value="active">Active</option>
+            <option value="other">Other</option>
+            </select>
+            <label>What type of pets do you prefer?   <small>(Check all that apply)</small></label>
+          <label><input type="checkbox" name="type-of-pets" value="dog">Dog</label>
+          <label><input type="checkbox" name="type-of-pets" value="cat">Cat</label>
+          <label><input type="checkbox" name="type-of-pets" value="bird">Bird</label>
+          <label><input type="checkbox" name="type-of-pets" value="fish">Fish</label>
+          <label><input type="checkbox" name="type-of-pets" value="reptile">Reptile</label>
+          <label><input type="checkbox" name="type-of-pets" value="others">Others</label>
+          </fieldset>
+          <fieldset>
+            <label for="comments">Why do you prefer this type of pets?</label>
+            <textarea id="comments" name="comments" placeholder="Enter your response here"></textarea>
+            <button id="submit" type="submit">Submit</button>
+            </div>
+            </form>
+            </body>
+            </html>
